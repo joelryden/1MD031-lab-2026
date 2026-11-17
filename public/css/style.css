@@ -1,18 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Cormorant:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Agrave+Pro:wght@100..700&display=swap');
+
 body {
-    font-size: 12pt;
+    font-size: 15pt;
+    font-family: "Agrave Pro", sans-serif; /* everything in body uses this font */
+}
+
+.ingridients {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#burgers {
+    background-color: black;
+    color: white;
+    padding: 2rem;
+
+}
+
+.burger-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 20rem);
+    gap: 2rem;
+    margin-top: 2rem;
+    border: 4px double white;
+}
+button:hover {
+    background-color: rgb(39, 255, 39);
+    cursor: pointer;
+}
+
+input[type="radio"]:hover, select:hover {
+    cursor: pointer;
+}
+
+#contact {
+    background-color: burlywood;
+    color: black;
+    padding: 2rem;
+    border-top: 4px none black;
+    border-bottom: 4px dotted black;
+    border-left: 4px dotted black;
+    border-right: 4px dotted black;
+ 
 }
 
 p {
-    color: red;
+    color: green;
 }
 
 h1 {
     font-family: 'Agbalumo';
     font-size: 36pt;
 }
+
+h5 {
+    font-size: 16pt;
+    padding: 0.5rem;
+
+}
+
 main, header, footer, nav ul {
-    max-width: 40rem;
+    max-width: 120rem;
     margin: 0 auto 0 auto;
 }
 main {
