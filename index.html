@@ -20,6 +20,7 @@
                     </h2>
                     All burger options feature exclusive freshly butchered meats 
 
+        <div style = "display: inline-block"> 
                 <h3>
                     The Ultimate Mouth-Surprise
                 </h3>
@@ -28,9 +29,9 @@
                 <h4>
                     Description:
                 </h4>
-                <div>
+                
                     The Ultimate Mouth Surprise is made with a unique bacon-jam each time, which may or may not contain:
-                </div>
+                
 
                 <ul>
                     <li>Bacon</li>
@@ -39,14 +40,98 @@
                     <li>Ayahuasca</li>
 
                 </ul>
+                </div>
+
+                <div style = "display: inline-block">
+                <h3>
+                    The Baconator
+                </h3>
+                <img src = "/img/baconator.png" style="width: 200px">
+                
+                <h4>
+                    Description:
+                </h4>
+                
+                    A timeless piece consiting of one kilogram of the finest kobe-bacon, which may or may not contain:
+                
+
+                <ul>
+                    <li>Bacon</li>
+                    <li>More bacon</li>
+                    <li>Bacon sauce</li>
+                    <li>Facon (vegan bacon)</li>
+
+                </ul>
+                </div>
 
 
+                <div style = "display: inline-block">
+                <h3>
+                    The cheesiest cheesy cheese burger of cheese
+                </h3>
+                <img src = "/img/cburger.jpg" style="width: 200px">
+                
+                <h4>
+                    Description: 
+                </h4>
+                
+                    Allergic to lactose? This burger will make you lachrymose! May or may not contain:
+                
+
+                <ul>
+                    <li>Cheddar</li>
+                    <li>Mozzarella</li>
+                    <li>Gryere</li>
+                    <li>Gouda</li>
+                    <li>Parmesan</li>
+                    <li>Pecorino Romano</li>
+                    <li>Blue Cheese</li>
+                    <li>Chevre</li>
+
+                </ul>
+                </div>
             </section>
 
-            <section>
+
+
+            <section id = "contact"> 
                 <h2>
-                    Customer information
+                    Delivery information
                 </h2>
+                This is where you can enter your information to receive your burger. 
+                <h3>Enter your details:</h3>
+                <form>
+                    <p>
+                        <label for = "fullname">Full name</label><br>
+                        <input type = "text" id = "fullname" name = "fln" required = "required" placeholder = "First and Last name">
+                    </p>
+                    <p>
+                        <label for = "email">E-mail</label><br>
+                        <input type = "email" id = "email" name = "em" required = "required" placeholder = "E-mail address">
+                    </p>
+                    <p>
+                        <label for = "street">Street </label><br>
+                        <input type ="text" id="street" name = "st" required = "required" placeholder = "Street name">
+                    </p>
+                    <p>
+                        <label for = "housenr"> House</label><br>
+                        <input type = "number" id = "hnr" name = "hn" required = "required" placeholder = "House number">
+                    </p>
+                </form>
+
+                <h3>Please select payment method below:</h3>
+                <p>
+                    <label for="payment">Payment method</label><br>
+                    <select id="payment" name = "pay">
+                        <option selected = "selected">Swish</option>
+                        <option>Credit card</option>
+                        <option>PayPal</option>
+                        <option>Apple/ Samsung Pay</option>
+                    </select>
+                </p>
+
+
+
             </section>
         </main>
 
