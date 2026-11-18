@@ -2,6 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Agrave+Pro:wght@100..700&display=swap');
 
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 6vw;
+    }
+}
+
 body {
     font-size: 15pt;
     font-family: "Agrave Pro", sans-serif; /* everything in body uses this font */
@@ -19,6 +25,7 @@ body {
 
 }
 
+
 .burger-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, 20rem);
@@ -26,6 +33,19 @@ body {
     margin-top: 2rem;
     border: 4px double white;
 }
+
+.burger-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+h3 {
+    font-size: 20pt;
+    text-align: center;
+}
+
 button:hover {
     background-color: rgb(39, 255, 39);
     cursor: pointer;
@@ -43,17 +63,16 @@ input[type="radio"]:hover, select:hover {
     border-bottom: 4px dotted black;
     border-left: 4px dotted black;
     border-right: 4px dotted black;
- 
+    text-align: left;
+}
+#contact h3 {
+    text-align: left;
 }
 
 p {
     color: green;
 }
 
-h1 {
-    font-family: 'Agbalumo';
-    font-size: 36pt;
-}
 
 h5 {
     font-size: 16pt;
@@ -77,18 +96,38 @@ main {
 } */
 
 header {
-    background-image: url("../img/polacks.jpg");
-    background-size: cover;
+    margin: 0 auto;
+    opacity: 0.9;
+    height: 400px;
+    padding: 0rem;
+    position: relative;
     overflow: hidden;
+    max-width: 120rem;
+
+}
+
+header img {
     width: 100%;
-    height: 200px;
-    opacity: 0.5;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 header h1 {
     width:40rem;
     margin: 0 auto;
     text-align: center;
+    font-family: 'Agbalumo';
+    font-size: 42pt;
+    color: white;
+    position: absolute;
+    top: 1%;
+    left: 25%;
+    right: 25%;
+    bottom: 25%;
+    
+    text-shadow: 2px 2px 8px rgb(226, 2, 2);
+
 }
 
 nav ul {
